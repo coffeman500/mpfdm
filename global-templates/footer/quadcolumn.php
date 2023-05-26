@@ -11,10 +11,10 @@ defined( 'ABSPATH' ) || exit;
 <div class="footer-quadcolumn">
     <div class="container container-maxwrap">
         
-        <div class="row gy-5 gx-lg-5">
+        <div class="row gy-5 gx-lg-5 gx-xxl-6">
 
             <?php if (is_active_sidebar('footer1')) { ?>
-            <div class="fa1 footer-area col-12 col-md-6 col-xl-4 col-xxl-3">
+            <div class="fa1 footer-area col-12 col-md-6 col-xl-4 col-xxl-auto">
                 <div class="fa-inner">
                     <?php dynamic_sidebar('footer1'); ?>
                 </div>

@@ -28,7 +28,7 @@ if( function_exists('acf_add_local_field_group') ) {
                 'label' => 'Callouts',
                 'name' => 'callouts',
                 'type' => 'repeater',
-                'sub_fields' => Array(
+                'sub_fields' => array(
                     array (
                         'key' => 'field_callout_customcallouts_callout_image',
                         'label' => 'Image',

@@ -12,7 +12,9 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class('col-12 col-lg-6 col-xl-4'); ?> id="post-<?php the_ID(); ?>">
 
     <div class="card">
+        <?php if (has_post_thumbnail()) { ?>
         <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'large'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
+        <?php } ?>
 
         <div class="card-body">
             <h3 class="card-title"><?php the_title(); ?></h3>

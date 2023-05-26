@@ -21,6 +21,9 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <?php the_field('header_scripts', 'options'); ?>
     <?php the_field('tag_manager_script', 'options'); ?>
+
+    <link rel="stylesheet" href="https://use.typekit.net/bka8uyf.css">
+    
 	<?php wp_head(); ?>
 </head>
 
@@ -31,12 +34,12 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
-        <?php get_template_part( 'global-templates/navbar', 'sticky'); ?>
+        <?php get_template_part( 'global-templates/navbar', 'sticky-buttons'); ?>
 
 		<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
 			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 		</a>
 
-		<?php get_template_part( 'global-templates/navbar', 'offcanvas-mpfdm-type2'); ?>
+		<?php get_template_part( 'global-templates/navbar', 'offcanvas-mpfdm-inline'); ?>
 
 	</header><!-- #wrapper-navbar -->

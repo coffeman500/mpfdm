@@ -1,0 +1,9 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.component-button {
+    display: flex;
+}

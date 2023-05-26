@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Value defaults
-$popupmodalExpires = strtotime(get_field('popupmodal_expiration', 'options'));
+$popupmodalExpires = (get_field('popupmodal_expiration', 'options')) ? strtotime(get_field('popupmodal_expiration', 'options')) : false;
 $popupmodalExpired = false;
 
 // Check expiration date

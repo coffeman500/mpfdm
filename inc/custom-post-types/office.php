@@ -12,7 +12,8 @@ function mpfdm_office_custom_post_type()
                 'name' => 'Offices',
                 'singular_name' => 'Office'
             ),
-            'public' => false,
+            'public' => true,
+            'publicly_queryable' => false,
             'has_archive' => false,
             'rewrite' => array( 'slug' => 'office' ),
             'hierarchical' => false,
@@ -29,8 +30,6 @@ function mpfdm_office_custom_post_type()
     );
 }
 add_action('init', 'mpfdm_office_custom_post_type');
-
-
 
 /*
  * Office Custom post type metaboxes

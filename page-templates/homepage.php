@@ -14,13 +14,15 @@ get_header();
 ?>
 
 <div id="homepage-wrapper">
-   
-    <?php
-    while ( have_posts() ) {
-        the_post();
-        get_template_part( 'loop-templates/content', 'empty' );
-    }
-    ?>
+
+    <div class="container">
+        <?php
+        while ( have_posts() ) {
+            the_post();
+            get_template_part( 'loop-templates/content', 'empty' );
+        }
+        ?>
+    </div>
 
 </div><!-- #full-width-page-wrapper -->
 

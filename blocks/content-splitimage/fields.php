@@ -10,26 +10,12 @@ if( function_exists('acf_add_local_field_group') ) {
         'title' => 'Split Image Content Section',
         'fields' => array (
             array (
-                'key' => 'field_content_splitimage_content',
-                'label' => 'Main Content',
-                'name' => 'content',
-                'type' => 'wysiwyg',
-                'wrapper' => array('width' => '50%'),
-            ),
-            array (
                 'key' => 'field_content_splitimage_image',
                 'label' => 'Image',
                 'name' => 'image',
                 'type' => 'image',
                 'wrapper' => array('width' => '50%'),
                 'instructions' => 'Recommended image size: 992x750',
-            ),
-            array (
-                'key' => 'field_content_splitimage_button',
-                'label' => 'Button',
-                'name' => 'button',
-                'type' => 'link',
-                'wrapper' => array('width' => '50%'),
             ),
             array (
                 'key' => 'field_content_splitimage_flip',

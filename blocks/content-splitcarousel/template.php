@@ -17,17 +17,16 @@ if ( ! empty( $block['align'] ) ) {
 }
 
 // Default values
-$content = get_field('content')     ?: "";
 $slides = get_field('slides')       ?: Array();
 ?>
 
 <div class="<?php echo $class_names; ?>">
     <div class="content-splitcarousel-inner">
-        <div class="content-splitcarousel-row row">
+        <div class="content-splitcarousel-row row gx-lg-5 gx-xl-6">
 
             <div class="content-splitcarousel-content col-12 col-lg-5">
                 <div class="content-splitcarousel-content-inner">
-                    <?php echo $content; ?>
+                    <InnerBlocks/>
                 </div>
             </div>
             <div class="content-splitcarousel-carousel col-12 col-lg-7">

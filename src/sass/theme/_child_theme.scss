@@ -9,6 +9,7 @@
 @import 'header/navigation';
 @import 'header/navbar-topmenu';
 @import 'header/navbar-sticky';
+@import 'header/navbar-inline';
 
 
 /**
@@ -36,10 +37,38 @@
     }
 }
 
+/**
+ * Content styling
+*/
+.main-content {
+    line-height: 2;
+    margin: 3rem 0;
+
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    h3, h4 {
+        margin-top: 3rem;
+    }
+    h3 {
+        font-weight: 500;
+        color: $dark;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .main-content {
+        margin: 5rem 0;
+    }
+}
+
 @include media-breakpoint-up(lg) 
 {
     .wrapper {
-        margin: 4rem 0;
+        margin: 4rem 0; 
     }
 }
 
@@ -65,12 +94,35 @@
     }
 }
 
-.btn-secondary-dark {
-    @include button-variant(
-        $secondary-dark, 
-        $secondary-dark, 
-        $light,
-    );    
+.theme-button-group {
+    .wp-block-group__inner-container {
+        margin-left: -.5rem!important;
+        margin-right: -.5rem!important;
+
+        .component-button {
+            padding: .5rem;
+            .btn {
+                flex: 1;
+                line-height: 1.2;
+                padding: 1rem .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .theme-button-group {
+        .wp-block-group__inner-container {
+            display: flex;
+            flex-direction: row;
+
+            .component-button {
+                flex: 1 1 0px;
+            }
+        }
+    }
 }
 
 
@@ -123,12 +175,39 @@
  */
 .container-maxwrap {
     width: 92%;
-    max-width: 1740px;
+    max-width: 1740px!important;
     margin: 0 auto;
 }
 .container-smwrap {
     max-width: 920px;
     margin: 0 auto;
+}
+
+/**
+ * Some new wrapper classes
+**/
+.xs-wrapper {
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sm-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.md-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lg-wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media all and (min-width: 1600px) {

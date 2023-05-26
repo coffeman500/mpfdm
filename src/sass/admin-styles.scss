@@ -1,0 +1,31 @@
+//Add your own editor styles here or import additional files
+
+$spacer: 1.5rem;
+$grid-gutter-width: 1.5rem;
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+.postbox {
+    * {
+        box-sizing: border-box;
+    }
+}
+
+@import "assets/bootstrap5/functions";
+
+@import "assets/bootstrap5/variables";
+@import "assets/bootstrap5/mixins";
+
+@import "assets/bootstrap5/containers";
+@import "assets/bootstrap5/grid";
+@import "assets/bootstrap5/forms";
+
+.sm-input {
+    margin-bottom: .5rem;
+}

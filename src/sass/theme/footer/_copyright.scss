@@ -1,0 +1,17 @@
+/**
+ * global-templates/footer/copyright.php
+ */ 
+
+.footer-copyright {
+    font-size: .875rem;
+
+    .footer-copyright-inner {
+        border-top: 1px solid rgba(255, 255, 255, .5);
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+
+        p {
+            margin: 0;
+        }
+    }
+}

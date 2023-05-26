@@ -1,0 +1,55 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+
+.banner-titleimage-inner {
+    position: relative;
+    z-index: 9;
+}
+
+.banner-titleimage-content-inner {
+    padding: 2rem;
+
+    h1 {
+        margin: 0;
+    }
+    p {
+        margin: 1rem 0 0;
+        color: white;
+    }
+}
+
+.banner-titleimage-image {
+    height: 60vw;
+    background-size: cover;
+    background-position: center;
+}
+
+@include media-breakpoint-up(md) {
+    .banner-titleimage-image {
+        height: auto;
+    }
+    .banner-titleimage-content {
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+    }
+    .banner-titleimage-content-inner {
+        padding: 1rem 2rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .banner-titleimage-content {
+        min-height: 450px;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .banner-titleimage-content-inner {
+        padding-left: calc((100vw - 1360px) / 2);
+    }
+}

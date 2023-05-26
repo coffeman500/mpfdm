@@ -1,0 +1,13 @@
+{
+    "name": "acf/",
+    "title": "",
+    "description": "",
+    "style": [ "file:./styles.css" ],
+    "category": "",
+    "icon": "",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}

@@ -1,0 +1,68 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+/**
+ * Colors
+**/
+$primary: #E68027;
+$primary-dark: darken($primary, 10%);
+$primary-light: lighten($primary, 10%);
+
+$secondary: #357EE8;
+$secondary-dark: #0D346D;
+$secondary-light: #337AE1;
+$secondary-lighter: #7DADF3;
+
+
+/**
+ * Modal backdrop x-index fix
+**/
+$zindex-modal-backdrop: 1040;
+
+
+/**
+ * Navbar
+**/
+$navbar-dark-color: white;
+$navbar-light-color: black;
+$nav-link-color: $primary-dark;
+
+
+/**
+ * Typography
+**/
+$obj1: "objektiv-mk1", sans-serif;
+$obj2: "objektiv-mk2", sans-serif;
+
+$font-family-sans-serif: $obj2;
+$font-weight-normal: 500;
+$line-height-base: 1.7;
+$headings-font-family: $obj1; 
+$headings-font-weight: 500;
+
+
+/**
+ * Buttons
+**/
+$btn-padding-x: 1.5rem;
+$btn-padding-y: 1rem;
+//$btn-font-size: ;
+$btn-border-radius: 30px;
+$btn-font-weight: 700;
+
+
+/**
+ * More spacing utilities
+ */
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+);

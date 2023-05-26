@@ -1,0 +1,69 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.content-splitimage {
+    .content-splitimage-content {
+
+        h1, h2 {
+            margin: .5rem 0;
+        }
+        h3, h4 {
+            margin: 0;
+            margin-top: 0;
+        }
+        p {
+            margin: 1.5rem 0 0;
+        }
+    }
+}
+
+.content-splitimage-content-button {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.content-splitimage-content-inner {
+    padding: 3rem .75rem;
+}
+
+.content-splitimage-image {
+    height: 60vw;
+    background-size: cover;
+    background-position: center;
+}
+
+@include media-breakpoint-up(lg) 
+{
+    .content-splitimage-image {
+        height: auto;
+    }
+    .content-splitimage-content-inner {
+        padding: 4rem 3rem;
+    }
+}
+
+@include media-breakpoint-up(xl) 
+{
+    .content-splitimage-row {
+        min-height: 600px;
+    }
+    .content-splitimage-content {
+        align-self: center;
+    }
+    .content-splitimage-content-inner {
+        padding: 4rem 6rem;
+    }
+}
+
+@include media-breakpoint-up(xxl) 
+{
+    .content-splitimage-row {
+        min-height: 700px;
+    }
+    .content-splitimage-content-inner {
+        padding: 4rem 20%;
+    }
+}

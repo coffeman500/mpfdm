@@ -1,0 +1,61 @@
+/**
+ * Styling for MPFDM defaut header
+ *
+ */
+
+#main-menu {
+    justify-content: end;
+}
+
+
+
+/**
+ * Force mobile offcanvas navbar to light styling regardless of
+ * whether the parent nav is light or dark styled
+ *
+ */
+@include media-breakpoint-down(lg) {
+    .mpfdm-navbar {
+        .offcanvas {
+            .nav-link {
+                --bs-nav-link-color: black;
+                --bs-nav-link-hover-color: rgba(0, 0, 0, .7);
+            }
+        }
+    }
+}
+
+
+
+@include media-breakpoint-up(lg) 
+{
+    #main-menu {
+        .nav-item {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            .dropdown-menu .nav-item {
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include media-breakpoint-up(xl)
+{
+    
+    /**
+     * Increase font size at XL+
+     *
+     */
+    #main-menu {
+        .nav-link {
+            font-size: 1.25rem;
+        }
+    }
+}

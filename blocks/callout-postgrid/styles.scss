@@ -1,0 +1,77 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.callout-postgrid {
+    padding: 4rem 0;
+}
+
+.callout-postgrid-title {
+    margin: 0 0 3rem;
+}
+
+.callout-postgrid-post-image {
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+    border-radius: 13px;
+    overflow: hidden;
+    @include overlay;
+    margin: 0 0 1rem;
+}
+
+.callout-postgrid-post-title {
+    color: white;
+    position: absolute;
+    bottom: .75rem;
+    left: 1rem;
+    right: 1rem;
+    margin: 0;
+    z-index: 9;
+}
+
+.callout-postgrid-post-excerpt {
+    margin: 0 0 1rem;
+}
+
+.callout-postgrid-post-button {
+    margin: 1rem 0 0;
+    display: flex;
+}
+
+@include media-breakpoint-up(md) {
+    .callout-postgrid-row {
+        justify-content: center;
+    }
+    .callout-postgrid-post {
+        display: flex;
+    }
+    .callout-postgrid-post-inner {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .callout-postgrid-post-button {
+        margin-top: auto;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .callout-postgrid {
+        padding: 6rem 0;
+
+        .callout-postgrid-post-excerpt {
+            line-height: 2;
+            font-size: 1.125rem; 
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .callout-postgrid {
+        padding: 8.5rem 0;
+    }
+}

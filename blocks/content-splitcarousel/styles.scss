@@ -1,0 +1,60 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.content-splitcarousel {
+
+    .content-splitcarousel-row {
+        align-items: center; 
+    }
+    .content-splitcarousel-content {
+
+        h3, h4, h5 {
+            margin: 0;
+        }
+        h2 {
+            margin: 0 0 1.5rem;
+        }
+    }
+    .content-splitcarousel-carousel {
+        position: relative;
+    }
+    .content-splitcarousel-nav {
+        position: absolute;
+        top: calc(50% - 25px);
+        z-index: 9;
+        background: $secondary-light;
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background: $secondary-dark;
+        }
+    }
+    .content-splitcarousel-previous {
+        left: 25px;
+    }
+    .content-splitcarousel-next {
+        right: 25px;
+    }
+} 
+
+@include media-breakpoint-up(xxl) {
+    .content-splitcarousel {
+        .content-splitcarousel-previous {
+            left: -25px;
+        }
+        .content-splitcarousel-next {
+            right: -25px;
+        }
+    }
+}

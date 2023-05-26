@@ -1,0 +1,49 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.banner-fullheight {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+    @include overlay;
+}
+.banner-fullheight-wrapper {
+    position: relative;
+    z-index: 9;
+}
+.banner-fullheight-content {
+    h1 {
+        margin-bottom: 0;
+    }
+    h2, h3, h4 {
+        margin-top: 0;
+    }
+}
+.banner-fullheight-content-buttons {
+    .btn {
+        margin: .25rem 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .banner-fullheight {
+        min-height: 100vh;
+        display: flex;
+    }
+    .banner-fullheight-wrapper {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    .banner-fullheight-content-buttons {
+        .btn {
+            margin: .25rem .75rem .25rem 0;
+        }
+    }
+
+}

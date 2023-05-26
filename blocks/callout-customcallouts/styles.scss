@@ -1,0 +1,74 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+
+.callout-customcallouts {
+    padding: 4rem 0;
+}
+
+.callout-customcallouts-title {
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
+.callout-customcallouts-row {
+    justify-content: center;
+}
+
+.callout-customcallouts-callout-inner {
+    overflow: hidden;
+    border-radius: 13px;
+    text-align: center;
+    background: white;
+}
+
+.callout-customcallouts-callout-image {
+    
+    img {
+        width: 100%;
+    }
+}
+
+.callout-customcallouts-callout-content {
+    
+    p {
+        margin: 0;
+    }
+}
+
+.callout-customcallouts-callout-content, .callout-customcallouts-callout-button, .callout-customcallouts-callout-image {
+    margin: 0 0 1rem;
+}
+
+@include media-breakpoint-up(md) {
+    .callout-customcallouts-callout {
+        display: flex;
+    }
+    .callout-customcallouts-callout-inner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .callout-customcallouts-callout-button {
+        margin-top: auto;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .callout-customcallouts {
+        padding: 6rem 0;
+    }
+
+    .callout-customcallouts-callout-button, .callout-customcallouts-callout-image {
+        margin-bottom: 2rem;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .callout-customcallouts {
+        padding: 8.5rem 0;
+    }
+}

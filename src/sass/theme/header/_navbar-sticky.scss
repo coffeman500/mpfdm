@@ -1,0 +1,82 @@
+/*
+ * Styles associated with the sticky nav shown on scroll
+ * this nav is only ever shown on desktop+, so keep that in mind when styling
+ *
+ * global-templates/navbar-sticky.php
+ */
+
+#sticky-nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: $zindex-fixed;
+    transform: translateY(-100%);
+    transition: all ease .6s;
+
+    .sticky-nav-mobile-row {
+        flex: 1;
+    }
+
+}
+
+#wrapper-navbar #sticky-nav-mobile {
+    .navbar-main-logo img {
+        margin-bottom: 0;
+        max-width: 70px;
+    }
+}
+
+#sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: $zindex-fixed;
+    transition: all ease .6s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .0);
+    transform: translateY(-100%);
+    
+    .navbar-brand {
+
+        img {
+            width: auto;
+            max-height: 50px;
+        }
+    }
+    .sticky-nav-cta {
+
+        .sticky-nav-cta-inner {
+            margin-left: 2rem;
+        }
+
+        .btn-icon {
+
+            i {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+.header-scrolled {
+    #sticky-nav, #sticky-nav-mobile {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        transform: translateY(0);
+    }
+
+}
+
+@include media-breakpoint-up(xl) {
+    #sticky-nav {
+        .sticky-nav-cta {
+            font-size: 1.25rem;
+
+            .sticky-nav-cta-inner {
+                margin-left: 2.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.content-wpreviewsslider {
+
+	.content-wpreviewsslider-header {
+		margin-bottom: 3rem;
+
+		h2 {
+			margin: 0;
+		}
+		.wprevpro_badge {
+			background: none!important;
+			border: 0!important;
+		}
+	}
+	.content-wpreviewsslider-slider {
+		.indrevdiv {
+			border-bottom: 1px solid $secondary-dark!important;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+    .wppro_badge1_DIV_2 {
+        display: none;
+    }
+}

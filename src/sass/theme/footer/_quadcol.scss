@@ -1,0 +1,39 @@
+/**
+ * global-templates/footer/quadcol.php
+ */ 
+
+.footer-quadcolumn {
+    font-size: .875rem;
+
+    h3 {
+        margin: 0 0 1.5rem;
+    }
+    p {
+        margin: .5rem 0 0;
+    }
+}
+
+
+.footer-area {
+    font-weight: bold;
+    
+    .menu {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+    }
+    .menu-item {
+        margin-bottom: .5rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .footer-quadcolumn {
+        font-size: 1rem;
+    }
+}

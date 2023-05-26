@@ -1,0 +1,49 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+
+.content-contactpill {
+    background: white;
+    color: $dark;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+    h1, h2, h3, h4 {
+        color: $dark;
+    }
+}
+
+.content-contactpill-inner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+@include media-breakpoint-up(xl) {
+    
+    .content-contactpill {
+        background: none;
+    }
+    .content-contactpill-inner {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .content-contactpill-inner-wrapper {
+        background: white;
+        border-radius: 13px;
+        box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+        padding: 2rem;
+    }
+
+}
+@include media-breakpoint-up(xxl) {
+
+    .content-contactpill-inner-wrapper {
+        padding: 4rem 6rem;
+    }
+
+}

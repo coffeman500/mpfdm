@@ -1,0 +1,34 @@
+/*
+ * global-templates/navbar-topmenu.php
+ *
+ */
+
+.navbar-topmenu {
+    margin: .5rem 0;
+    font-weight: 500;
+}
+.navbar-topmenu-address, .navbar-topmenu-schedule {
+    a {
+        i {
+            margin-right: .5rem;
+            color: $primary;
+        }
+    }
+}
+.navbar-topmenu-phone {
+    
+    i {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(xxl)
+{
+    .navbar-topmenu {
+        font-size: 1.25rem;
+
+        a {
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/**
+ * General header styling
+ */ 
+
+#wrapper-navbar {
+    padding: .5rem 0;
+}
+
+@include media-breakpoint-up(lg) {
+    #wrapper-navbar {
+        padding: .25rem 0;
+    }
+}

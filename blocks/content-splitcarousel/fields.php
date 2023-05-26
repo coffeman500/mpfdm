@@ -10,12 +10,6 @@ if( function_exists('acf_add_local_field_group') ) {
         'title' => 'Split Carousel',
         'fields' => array (
             array (
-                'key' => 'field_content_splitcarousel_content',
-                'label' => 'Content',
-                'name' => 'content',
-                'type' => 'wysiwyg',
-            ),
-            array (
                 'key' => 'field_content_splitcarousel_slides',
                 'label' => 'Slides',
                 'name' => 'slides',

@@ -19,7 +19,7 @@ get_header();
 
 <div id="index-wrapper">
 
-    <div class="index-header">
+    <div class="index-header bg-pattern">
         <div class="index-header-inner">
             <h1>Blog</h1>
             <h4>Our Latest Dental News</h4>

@@ -14,7 +14,6 @@ if( function_exists('acf_add_local_field_group') ) {
                 'label' => 'Main Section Title',
                 'name' => 'title',
                 'type' => 'text',
-                'default_value' => 'Our Posts',
             ),
             array (
                 'key' => 'field_callout_postgrid_display_type',
@@ -23,8 +22,8 @@ if( function_exists('acf_add_local_field_group') ) {
                 'type' => 'select',
                 'choices' => Array(
                     'specific' => 'Specified posts',
-                    'children' => 'All children of specified post',
-                    'siblings' => 'All siblings of the current post'
+                    'children' => 'All children of current or specified post',
+                    'siblings' => 'All siblings of current or specified post'
                 ),
             ),
             array (
@@ -34,6 +33,19 @@ if( function_exists('acf_add_local_field_group') ) {
                 'type' => 'post_object',
                 'multiple' => 1,
                 'required' => 1,
+            ),
+            array (
+                'key' => 'field_callout_postgrid_columns',
+                'label' => 'Columns',
+                'name' => 'columns',
+                'type' => 'select',
+                'choices' => array(
+                    'col-12' => '1',
+                    'col-12 col-md-6' => '2',
+                    'col-12 col-md-6 col-xl-4' => '3',
+                    'col-12 col-md-6 col-lg-4 col-xxl-3' => '4',
+                ),
+                'default_value' => 'col-12 col-md-6 col-lg-4 col-xxl-3',
             ),
             array (
                 'key' => 'field_callout_postgrid_post_limit',
@@ -68,6 +80,13 @@ if( function_exists('acf_add_local_field_group') ) {
                 'key' => 'field_callout_postgrid_hide_excerpt',
                 'label' => 'Hide excerpt',
                 'name' => 'hide_excerpt',
+                'type' => 'true_false',
+            ),
+            array (
+                'key' => 'field_callout_postgrid_stretchedlink',
+                'instructions' => 'Removes the individual post buttons, and instead includes a stretched link over the entire callout.',
+                'label' => 'Stretched Link',
+                'name' => 'stretchedlink',
                 'type' => 'true_false',
             ),
             array (

@@ -154,7 +154,7 @@ function mpfdm_get_office_hours($office_id, $classes = '')
  * 
  * @return String
  */
-function mpfdm_get_office_information($office_id = false, $type, $linked = false, $classes = '', $prefix = '', $postfix = '')
+function mpfdm_get_office_information($office_id = false, $type = null, $linked = false, $classes = '', $prefix = '', $postfix = '')
 {
     // Retrieve office by id provided, or first available
     if ($office_id === false) {

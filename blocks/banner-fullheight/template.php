@@ -46,7 +46,7 @@ $overlayType = get_field('overlay_type')            ?: 'normal';
     <div class="banner-fullheight-wrapper container">
 
         <div class="banner-fullheight-content">
-            <?php echo $content; ?>
+            <InnerBlocks/>
 
             <?php if ($button1 || $button2) { ?>
             <div class="banner-fullheight-content-buttons">

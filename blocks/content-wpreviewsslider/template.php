@@ -24,9 +24,9 @@ $badgeShortcode = get_field('badge_shortcode');
 ?>
 
 <div class="<?php echo $class_names; ?>">
-	<div class="content-wpreviewsslider-inner container">
+	<div class="content-wpreviewsslider-inner">
 
-		<div class="content-wpreviewsslider-header row gy-3">
+		<div class="content-wpreviewsslider-header align-items-end row gy-3">
 
 			<?php if ($title) { ?>
 			<div class="content-wpreviewsslider-header-title col-auto">
@@ -35,7 +35,7 @@ $badgeShortcode = get_field('badge_shortcode');
 			<?php } ?>
 
 			<?php if ($badgeShortcode) { ?>
-			<div class="content-wpreviewsslider-header-badge col">
+			<div class="content-wpreviewsslider-header-badge d-none d-lg-block col-auto">
 				<?php echo do_shortcode($badgeShortcode); ?>
 			</div>
 			<?php } ?>

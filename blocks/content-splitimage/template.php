@@ -17,8 +17,6 @@ if ( ! empty( $block['align'] ) ) {
 }
 
 // Value defaults
-$content = get_field('content')                 ?: "";
-$button = get_field('button')                   ?: false;
 $image = get_field('image')                     ?: Array( "url" => "https://placehold.co/992x750", "alt" => "Change me." );
 
 $contentOrder = (get_field('flip_positions'))   ? "order-lg-2" : "order-lg-1";
@@ -30,13 +28,7 @@ $imageOrder = (get_field('flip_positions'))     ? "order-lg-1" : "order-lg-2";
 
         <div class="content-splitimage-content col-12 col-lg-6 <?php echo $contentOrder; ?>">
             <div class="content-splitimage-content-inner">
-                <?php echo $content; ?>
-
-                <?php if ($button) { ?>
-                <div class="content-splitimage-content-button">
-                    <?php echo mpfdm_get_acf_button($button, 'btn btn-primary btn-icon', '<i class="fa-solid fa-arrow-right postfix-icon"></i>'); ?>
-                </div>
-                <?php } ?>
+                <InnerBlocks/>
             </div>
         </div>
 

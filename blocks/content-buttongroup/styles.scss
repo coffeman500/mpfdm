@@ -1,0 +1,50 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.content-buttongroup {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid $light;
+
+    .content-buttongroup-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        border-radius: 0;
+        border-top-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+
+        &:last-child {
+            border-bottom-width: 0px;
+        }
+    }
+    .highlight-button {
+        background: $primary;
+    }
+}
+
+.content-buttongroup-dark {
+    border-color: $dark;
+}
+
+@include media-breakpoint-up(lg) {
+    .content-buttongroup {
+
+        .content-buttongroup-button {
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 1px;
+            border-bottom-width: 0px;
+            min-height: 70px;
+
+            &:last-child {
+                border-right-width: 0px;
+            }
+        }
+    }
+}

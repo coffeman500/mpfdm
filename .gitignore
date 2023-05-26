@@ -52,4 +52,6 @@ dist-product/
 **/img
 
 # Custom files we don't want to push
-src/sass/theme/custom/
+src/sass/theme/custom/*
+js/*
+css/*

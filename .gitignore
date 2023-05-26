@@ -50,3 +50,6 @@ phpcs.xml
 dist/
 dist-product/
 **/img
+
+# Custom files we don't want to push
+src/sass/theme/custom/

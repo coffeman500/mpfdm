@@ -14,3 +14,14 @@ jQuery(window).scroll(function() {
         jQuery('#wrapper-navbar').removeClass('header-scrolled');
     }
 });
+
+/**
+ * Closes the offcanvas nav when an item is selected that doesn't change page location
+ * 
+ */
+var myOffcanvas = document.getElementById('navbarNavOffcanvas');
+var bsOffcanvas = new window.BootstrapOffcanvas(myOffcanvas);
+jQuery('.offcanvas-body a').on('click', function() {
+    if ( jQuery(this).hasClass('dropdown-toggle') || !jQuery(this).parent().hasClass('current-menu-item') ) return;
+    bsOffcanvas.hide();
+});

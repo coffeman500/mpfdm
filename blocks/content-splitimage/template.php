@@ -17,10 +17,12 @@ if ( ! empty( $block['align'] ) ) {
 }
 
 // Value defaults
-$image = get_field('image')                     ?: Array( "url" => "https://placehold.co/992x750", "alt" => "Change me." );
+$image = get_field('image')                         ?: Array( "url" => "https://placehold.co/992x750", "alt" => "Change me." );
 
-$contentOrder = (get_field('flip_positions'))   ? "order-lg-2" : "order-lg-1";
-$imageOrder = (get_field('flip_positions'))     ? "order-lg-1" : "order-lg-2";
+$contentOrder = (get_field('flip_positions'))       ? "order-lg-2" : "order-lg-1";
+$imageOrder = (get_field('flip_positions'))         ? "order-lg-1" : "order-lg-2";
+$imagePositionX = get_field('image_postition_x')    ?: 'center';
+$imagePositionY = get_field('image_postition_y')    ?: 'center';
 ?>
 
 <div class="<?php echo $class_names; ?>">
@@ -32,7 +34,7 @@ $imageOrder = (get_field('flip_positions'))     ? "order-lg-1" : "order-lg-2";
             </div>
         </div>
 
-        <div class="content-splitimage-image col-12 col-lg-6 <?php echo $imageOrder; ?>" style="background-image:url('<?php echo $image['url']; ?>');"></div>
+        <div class="content-splitimage-image col-12 col-lg-6 <?php echo $imageOrder; ?>" style="background-image:url('<?php echo $image['url']; ?>');background-position:<?php echo $imagePositionX; ?> <?php echo $imagePositionY; ?>"></div>
 
     </div>
 </div>

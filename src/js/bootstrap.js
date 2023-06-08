@@ -20,10 +20,11 @@ export {
 	Modal,
 	Offcanvas,
 	//Popover,
-	ScrollSpy,
+	ScrollSpy, 
 	Tab,
 	//Toast,
 	//Tooltip
 }
 
 window.BootstrapModal = Modal;
+window.BootstrapOffcanvas = Offcanvas;

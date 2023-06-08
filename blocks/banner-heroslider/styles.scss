@@ -1,0 +1,65 @@
+@import '../../src/sass/assets/bootstrap5/functions';
+@import '../../src/sass/assets/bootstrap5/variables';
+@import '../../src/sass/assets/bootstrap5/mixins';
+@import '../../src/sass/theme/child_theme_variables';
+@import '../../src/sass/theme/mixins';
+
+.banner-heroslider-preview {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .carousel-inner {
+        min-height: 650px!important;
+    }
+}
+
+.banner-heroslider {
+
+    .carousel-item {
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .carousel-inner {
+        position: relative;
+        @include overlay;
+    }
+    .carousel-content {
+        padding: 3rem 0;
+        position: relative;
+        z-index: 9;
+
+        h1 {
+            margin-bottom: 0;
+        }
+        h2, h3, h4 {
+            margin-top: 0;
+        }
+    }
+    .carousel-indicators {
+        z-index: 10;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .banner-heroslider {
+
+        .carousel-content {
+            min-height: 100vh;
+            max-height: 1200px;
+            display: flex;
+            align-items: center;
+        }
+        .acf-innerblocks-container { 
+            flex: 1;
+        }
+    }
+
+}
